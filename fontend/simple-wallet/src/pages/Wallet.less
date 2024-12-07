@@ -1,0 +1,93 @@
+.wallet-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    position: relative;
+  }
+  
+  .wallet-header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+    .button {
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
+  
+      &.connect {
+        background-color: #007bff;
+        color: white;
+      }
+  
+      &.disconnect {
+        background-color: #dc3545;
+        color: white;
+      }
+    }
+  
+    .welcome-text {
+      font-size: 14px;
+    }
+  }
+  
+  .network-switch {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  
+    .button {
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
+  
+      &.mainnet {
+        background-color: #17a2b8;
+        color: white;
+      }
+  
+      &.goerli {
+        background-color: #ffc107;
+        color: black;
+      }
+    }
+  }
+  
+  .balance-card {
+    width: 300px;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    text-align: left;
+  
+    .balance-title {
+      margin: 0;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  
+    .balance-value {
+      margin: 0;
+      font-size: 24px;
+    }
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 20px;
+  }
+  
